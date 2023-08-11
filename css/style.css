@@ -312,6 +312,7 @@
   background-color: #fdf2e9;
   display: grid;
   grid-template-columns: 55fr 45fr;
+  align-items: center;
 }
 
 .testimonials-container {
@@ -328,7 +329,7 @@
 .testimonial-img {
   width: 6.4rem;
   border-radius: 50%;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
 }
 
 .testimonial-text {
@@ -347,7 +348,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
-  align-items: center;
 }
 
 .gallery-item {
@@ -355,8 +355,8 @@
 }
 
 .gallery-item img {
-  display: block;
   width: 100%;
+  display: block;
   transition: all 0.4s;
 }
 
