@@ -23,6 +23,7 @@ Paragraph default: 1.6
 
 #fdf2e9
 #fae5d3
+#eb984e
 
 - Shades: #cf711f
 - Accents:
@@ -33,6 +34,8 @@ Paragraph default: 1.6
 #333
 
 --- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.08);
 
 --- Letter-Spacing
 -0.5px
@@ -64,7 +67,7 @@ Medium: 12px
   row-gap: 9.6rem;
 }
 
-.grid:not(last-child) {
+.grid:not(:last-child) {
   margin-bottom: 9.6rem;
 }
 
@@ -136,6 +139,7 @@ body {
   margin-bottom: 1.6rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   text-decoration: none;
@@ -143,8 +147,26 @@ body {
   font-weight: 600;
   display: inline-block;
   padding: 1.6rem 3.2rem;
+
+  cursor: pointer;
+  border: none;
+
   border-radius: 10px;
   transition: all 0.3s;
+}
+
+.btn--cta {
+  align-self: end;
+  padding: 1.2rem;
+  background-color: #45260a;
+  color: #fdf2e9;
+  outline: none;
+  font-family: inherit;
+}
+
+.btn--cta:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .btn--full:link,
@@ -205,6 +227,11 @@ body {
   width: 3rem;
   height: 3rem;
   color: #cf711f;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(207, 113, 31, 0.5);
 }
 
 /*******************************/
