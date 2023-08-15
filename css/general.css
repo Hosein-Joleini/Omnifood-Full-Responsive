@@ -84,10 +84,6 @@ Medium: 12px
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
-}
-
 .align-center-v {
   align-items: center;
 }
@@ -100,7 +96,7 @@ Medium: 12px
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
