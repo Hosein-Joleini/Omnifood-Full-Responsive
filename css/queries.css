@@ -169,6 +169,7 @@
 
   .btn-mobile-nav {
     display: block;
+    z-index: 1000;
   }
 }
 
